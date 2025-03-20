@@ -11,7 +11,7 @@ app.use(express.json());
 
 // Routes
 app.use('/api/shorten', shortenRouter);
-app.use('/:shortId', redirectRouter);
+app.use('/api/redirect', redirectRouter);
 
 // Start server
 app.listen(PORT, () => {
