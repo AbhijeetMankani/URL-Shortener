@@ -25,7 +25,7 @@ export default function RedirectPage({ params }: { params: Promise<{ id: string 
                 }
                 window.location.href = data.originalUrl;
             } catch (error) {
-                router.push('/shorten');
+                router.push('/');
             }
         };
 
